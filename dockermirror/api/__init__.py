@@ -45,7 +45,7 @@ def create_archive():
     with Connection(conn):
         q = Queue('default')
         job = q.enqueue(save_images, Path(app.config['OUTPUT_DIR']), images,
-                        timeout='1h', ttl='24h', result_ttl='7d')
+                        job_timeout='1h', ttl='24h', result_ttl='7d')
 
     response = {
         'job_id': job.get_id(),

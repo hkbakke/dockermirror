@@ -1,4 +1,4 @@
 flask
 docker
 redis
-rq
+rq>=1.0
