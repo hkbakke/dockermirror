@@ -4,6 +4,9 @@ Docker mirroring for networks without internet connectivity
 # CLI usage
 
     python3 -m dockermirror --help
+    
+# Client (example implementation)
+[dockermirror-client](https://github.com/hkbakke/dockermirror-client)
 
 # API usage
 Create archive:
