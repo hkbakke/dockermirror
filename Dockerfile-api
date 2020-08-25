@@ -1,4 +1,6 @@
-FROM python:3
+FROM docker
+
+RUN apk add --no-cache python3 python3-dev py3-pip gcc musl-dev linux-headers
 
 RUN mkdir /src
 WORKDIR /src
